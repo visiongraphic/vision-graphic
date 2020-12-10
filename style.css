@@ -1,0 +1,45 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+}
+
+.image{
+    width: 100%;
+}
+
+.image img{
+    width: 100%;
+    object-fit: cover;
+    object-position: top center;
+}
+
+@media only screen and (min-width: 720px){
+
+    .image img.pc{
+        display: block;
+    }
+
+    .image img.mobile{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 720px){
+
+    .image img.pc{
+        display: none;
+    }
+
+    .image img.mobile{
+        display: block;
+    }
+}
